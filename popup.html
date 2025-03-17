@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>台股多網站查詢工具</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>台股多網站查詢工具</h1>
+    
+    <div class="input-group">
+      <input type="text" id="stockCode" placeholder="請輸入台股代號 (例如: 3321)" maxlength="6">
+      <button id="submitBtn">查詢</button>
+    </div>
+    
+    <div id="message" class="message"></div>
+    
+    <div class="history-section">
+      <h2>最近查詢</h2>
+      <ul id="historyList" class="history-list"></ul>
+    </div>
+    
+    <div class="sites-section">
+      <h2>查詢網站</h2>
+      <ul class="sites-list">
+        <li>IFA.ai 個股資訊</li>
+        <li>GoodInfo 股利政策</li>
+        <li>StatementDog 財務健檢</li>
+        <li>TradingView 技術分析</li>
+      </ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
