@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'https://ifa.ai/tw-stock/{code}',
     'https://goodinfo.tw/tw/StockDividendSchedule.asp?STOCK_ID={code}',
     'https://statementdog.com/analysis/{code}/stock-health-check',
-    'https://tw.tradingview.com/symbols/TWSE-{code}/technicals/'
+    'https://tw.tradingview.com/symbols/TWSE-{code}/technicals/',
+    'https://www.cmoney.tw/forum/stock/{code}?s=technical-analysis'
   ];
   
   // 載入歷史記錄
@@ -58,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // 開啟網站
   function openWebsites(code) {
+    // 處理所有網站
     websites.forEach(url => {
       const finalUrl = url.replace('{code}', code);
       chrome.tabs.create({ url: finalUrl });
