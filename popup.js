@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const submitBtn = document.getElementById('submitBtn');
   const messageDiv = document.getElementById('message');
   const historyList = document.getElementById('historyList');
+  const clearAllBtn = document.getElementById('clearAllBtn');
   
   // 網站模板列表
   const websites = [
@@ -20,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // 提交按鈕點擊事件
   submitBtn.addEventListener('click', function() {
     processStockCode();
+  });
+  
+  // 清除全部記錄按鈕點擊事件
+  clearAllBtn.addEventListener('click', function() {
+    clearAllHistory();
   });
   
   // 輸入框按下 Enter 鍵事件
@@ -161,5 +167,15 @@ document.addEventListener('DOMContentLoaded', function() {
         loadHistory();
       });
     });
+  }
+  
+  // 清除全部歷史記錄
+  function clearAllHistory() {
+    if (confirm('確定要清除所有查詢記錄嗎？')) {
+      chrome.storage.local.set({ history: [] }, function() {
+        loadHistory();
+        showMessage('已清除所有查詢記錄', true);
+      });
+    }
   }
 }); 

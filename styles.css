@@ -100,6 +100,26 @@ button:hover {
   color: #d93025;
 }
 
+.history-section h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-all-btn {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: #f1f3f4;
+  color: #5f6368;
+  border: 1px solid #dadce0;
+}
+
+.clear-all-btn:hover {
+  background-color: #e8eaed;
+  color: #d93025;
+}
+
 .sites-list {
   list-style: none;
   margin-left: 8px;
@@ -114,4 +134,4 @@ button:hover {
 .sites-list li:before {
   content: "• ";
   color: #1a73e8;
-} 
+}
