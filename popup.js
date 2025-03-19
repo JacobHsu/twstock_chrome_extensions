@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'https://ifa.ai/tw-stock/{code}',
     'https://goodinfo.tw/tw/StockDividendSchedule.asp?STOCK_ID={code}',
     'https://statementdog.com/analysis/{code}/stock-health-check',
+    'https://histock.tw/stock/{code}/每股淨值',
     'https://tw.tradingview.com/symbols/TWSE-{code}/technicals/',
     'https://www.cmoney.tw/forum/stock/{code}?s=technical-analysis'
   ];
