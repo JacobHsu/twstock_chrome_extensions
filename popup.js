@@ -1,3 +1,5 @@
+import { tpexStocks } from './tpex_stocks.js';
+
 document.addEventListener('DOMContentLoaded', function() {
   const stockCodeInput = document.getElementById('stockCode');
   const submitBtn = document.getElementById('submitBtn');
@@ -12,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     'https://goodinfo.tw/tw/StockDividendSchedule.asp?STOCK_ID={code}',
     'https://statementdog.com/analysis/{code}/stock-health-check',
     'https://histock.tw/stock/{code}/每股淨值',
-    'https://tw.tradingview.com/symbols/TWSE-{code}/technicals/',
     'https://www.cmoney.tw/forum/stock/{code}?s=technical-analysis',
   ];
   
@@ -72,6 +73,18 @@ document.addEventListener('DOMContentLoaded', function() {
       const finalUrl = url.replace('{code}', code);
       chrome.tabs.create({ url: finalUrl });
     });
+    
+    // 特別處理 TradingView URL (區分上市上櫃)
+    const tradingViewUrl = getTradingViewUrl(code);
+    chrome.tabs.create({ url: tradingViewUrl });
+  }
+  
+  // 根據股票代碼判斷是上市還是上櫃，並返回對應的 TradingView URL
+  function getTradingViewUrl(code) {
+    // 檢查股票代碼是否在櫃買列表中
+    return tpexStocks.has(code) 
+      ? `https://tw.tradingview.com/symbols/TPEX-${code}/technicals/`
+      : `https://tw.tradingview.com/symbols/TWSE-${code}/technicals/`;
   }
   
   // 顯示訊息
