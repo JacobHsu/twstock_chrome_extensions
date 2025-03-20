@@ -7,9 +7,12 @@
 ### 支援的網站
 
 - IFA.ai 個股資訊
+- 鉅亨網 個股資訊
 - GoodInfo 股利政策
 - StatementDog 財務健檢
+- HiStock 每股淨值
 - TradingView 技術分析
+- CMoney 技術分析
 
 ## 使用方法
 
