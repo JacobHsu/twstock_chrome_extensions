@@ -11,8 +11,10 @@
 - GoodInfo 股利政策
 - StatementDog 財務健檢
 - HiStock 每股淨值
+- Growin.tv 股票分析
 - TradingView 技術分析
 - CMoney 技術分析
+
 
 ## 使用方法
 

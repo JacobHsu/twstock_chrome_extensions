@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'https://statementdog.com/analysis/{code}/stock-health-check',
     'https://histock.tw/stock/{code}/每股淨值',
     'https://www.cmoney.tw/forum/stock/{code}?s=technical-analysis',
+    'https://www.growin.tv/zh/my/analysis/{code}#analysis',
   ];
   
   // 載入歷史記錄
