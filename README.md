@@ -10,6 +10,7 @@
 - 鉅亨網 個股資訊
 - GoodInfo 股利政策
 - StatementDog 財務健檢
+- findbillion 財務健檢
 - HiStock 每股淨值
 - Growin.tv 股票分析
 - TradingView 技術分析

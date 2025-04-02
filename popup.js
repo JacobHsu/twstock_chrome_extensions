@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'https://goodinfo.tw/tw/StockDividendSchedule.asp?STOCK_ID={code}',
     'https://statementdog.com/analysis/{code}/stock-health-check',
     'https://histock.tw/stock/{code}/每股淨值',
+    'https://www.findbillion.com/twstock/{code}/financial_statement',
     'https://www.cmoney.tw/forum/stock/{code}?s=technical-analysis',
     'https://www.growin.tv/zh/my/analysis/{code}#analysis',
   ];
