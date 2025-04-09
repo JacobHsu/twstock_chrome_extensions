@@ -80,6 +80,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // 特別處理 TradingView URL (區分上市上櫃)
     const tradingViewUrl = getTradingViewUrl(code);
     chrome.tabs.create({ url: tradingViewUrl });
+    
+    // 特別處理 FastBull URL (區分上市上櫃)
+    const fastBullUrl = getFastBullUrl(code);
+    chrome.tabs.create({ url: fastBullUrl });
   }
   
   // 根據股票代碼判斷是上市還是上櫃，並返回對應的 TradingView URL
@@ -88,6 +92,14 @@ document.addEventListener('DOMContentLoaded', function() {
     return tpexStocks.has(code) 
       ? `https://tw.tradingview.com/symbols/TPEX-${code}/technicals/`
       : `https://tw.tradingview.com/symbols/TWSE-${code}/technicals/`;
+  }
+  
+  // 根據股票代碼判斷是上市還是上櫃，並返回對應的 FastBull URL
+  function getFastBullUrl(code) {
+    // 檢查股票代碼是否在櫃買列表中
+    return tpexStocks.has(code) 
+      ? `https://www.fastbull.com/tw/quotation-detail/TPEx-${code}`
+      : `https://www.fastbull.com/tw/quotation-detail/TWSE-${code}`;
   }
   
   // 顯示訊息
