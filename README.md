@@ -15,6 +15,7 @@
 - TradingView 技術分析
 - CMoney 技術分析
 - FastBull 技術分析
+- 雲投資 河流圖
 
 ## 使用方法
 

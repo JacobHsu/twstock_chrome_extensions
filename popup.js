@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'https://www.findbillion.com/twstock/{code}/financial_statement',
     'https://www.cmoney.tw/forum/stock/{code}?s=technical-analysis',
     'https://www.growin.tv/zh/my/analysis/{code}#analysis',
+    'https://winvest.tw/Stock/Symbol/Comment/{code}',
     'https://www.fugle.tw/ai/{code}',
   ];
   
