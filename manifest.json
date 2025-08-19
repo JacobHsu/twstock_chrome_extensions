@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "台股多網站查詢工具",
+  "name": "虛擬幣網站快捷工具",
   "version": "1.0",
-  "description": "輸入台股代號，同時開啟多個股票分析網站",
+  "description": "一鍵開啟多個虛擬幣分析和監控網站",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -12,8 +12,7 @@
     }
   },
   "permissions": [
-    "tabs",
-    "storage"
+    "tabs"
   ],
   "icons": {
     "16": "icons/icon16.png",

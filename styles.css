@@ -28,28 +28,22 @@ h2 {
   color: #5f6368;
 }
 
-.input-group {
+.button-group {
   display: flex;
+  justify-content: center;
   margin-bottom: 12px;
 }
 
-input {
-  flex: 1;
-  padding: 8px 12px;
-  border: 1px solid #dadce0;
-  border-radius: 4px 0 0 4px;
-  font-size: 14px;
-}
-
 button {
-  padding: 8px 16px;
+  padding: 12px 24px;
   background-color: #1a73e8;
   color: white;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.2s;
+  min-width: 120px;
 }
 
 button:hover {
@@ -67,58 +61,6 @@ button:hover {
   color: #188038;
 }
 
-.history-list {
-  list-style: none;
-  margin-bottom: 16px;
-}
-
-.history-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.history-code {
-  font-weight: bold;
-  cursor: pointer;
-  color: #1a73e8;
-}
-
-.history-code:hover {
-  text-decoration: underline;
-}
-
-.history-delete {
-  color: #5f6368;
-  cursor: pointer;
-  font-size: 12px;
-}
-
-.history-delete:hover {
-  color: #d93025;
-}
-
-.history-section h2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.clear-all-btn {
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 4px;
-  background-color: #f1f3f4;
-  color: #5f6368;
-  border: 1px solid #dadce0;
-}
-
-.clear-all-btn:hover {
-  background-color: #e8eaed;
-  color: #d93025;
-}
 
 .sites-list {
   list-style: none;
