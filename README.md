@@ -4,18 +4,22 @@
 
 這是一個 Chrome 擴展，允許用戶輸入台股代號，然後同時開啟多個與該股票相關的分析網站。
 
-### 支援的網站
+### 支援的網站（共 12 個）
 
-- IFA.ai Fugle富果 Growin.tv 股票分析
-- 鉅亨網 個股資訊
-- GoodInfo 股利政策
-- StatementDog 財務健檢
-- findbillion 財務健檢
-- HiStock 每股淨值
-- TradingView 技術分析
-- CMoney 技術分析
-- FastBull 技術分析
-- 雲投資 河流圖
+| 網站 | 分類 |
+|------|------|
+| Fugle.ai | 個股分析 |
+| IFA.ai | 個股分析 |
+| 鉅亨網 | 個股資訊 |
+| GoodInfo | 股利政策 |
+| StatementDog | 財務健檢 |
+| Growin.tv | 財務健檢 |
+| findbillion | 財務健檢 |
+| winvest | 投資分析 |
+| HiStock | 每股淨值 |
+| TradingView | 技術分析 |
+| CMoney | 技術分析 |
+| FastBull | 技術分析 |
 
 ## 使用方法
 
