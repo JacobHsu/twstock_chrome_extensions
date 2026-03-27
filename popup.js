@@ -1,4 +1,5 @@
 import { tpexStocks } from './tpex_stocks.js';
+import { blacklistStocks } from './blacklist.js';
 
 document.addEventListener('DOMContentLoaded', function() {
   const stockCodeInput = document.getElementById('stockCode');
@@ -40,6 +41,16 @@ document.addEventListener('DOMContentLoaded', function() {
       processStockCode();
     }
   });
+
+  // 即時檢查黑名單，顯示紅框與股名
+  stockCodeInput.addEventListener('input', function() {
+    const code = stockCodeInput.value.trim();
+    if (blacklistStocks.has(code)) {
+      stockCodeInput.classList.add('blacklisted');
+    } else {
+      stockCodeInput.classList.remove('blacklisted');
+    }
+  });
   
   // 處理股票代碼
   function processStockCode() {
@@ -60,8 +71,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // 保存到歷史記錄
     saveToHistory(stockCode);
     
-    // 清空輸入框
+    // 清空輸入框並移除紅框
     stockCodeInput.value = '';
+    stockCodeInput.classList.remove('blacklisted');
   }
   
   // 驗證股票代碼

@@ -39,6 +39,13 @@ input {
   border: 1px solid #dadce0;
   border-radius: 4px 0 0 4px;
   font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input.blacklisted {
+  border-color: #d93025;
+  box-shadow: 0 0 0 2px rgba(217, 48, 37, 0.2);
+  outline: none;
 }
 
 button {
