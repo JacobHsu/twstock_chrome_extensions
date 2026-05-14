@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // 網站模板列表
   const websites = [
-    'https://ifa.ai/tw-stock/{code}',
+    'https://histock.tw/stock/dividend.aspx',
     'https://www.cnyes.com/twstock/{code}',
     'https://goodinfo.tw/tw/StockDividendSchedule.asp?STOCK_ID={code}',
     'https://statementdog.com/analysis/{code}/stock-health-check',
